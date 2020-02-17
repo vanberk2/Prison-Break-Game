@@ -1,0 +1,48 @@
+import org.lwjgl.opengl.GL11;
+import org.newdawn.slick.opengl.Texture;
+import org.newdawn.slick.opengl.TextureLoader;
+import org.newdawn.slick.util.ResourceLoader;
+import java.io.IOException;
+import java.lang.String;
+
+
+public class Tile {
+    private String textureName;  //specifies material of block object
+    private Texture texture;    // texture of the tile
+    private float x, y, hw;   //position and height/width of tile (height/width will always be the same for now)
+
+    public Tile (float x, float y, float hw, String textureName) {
+        this.x = x;
+        this.y = y;
+        this.hw = hw;
+        this.textureName = textureName;
+        this.texture = null;
+    }
+
+    public void tDraw () {
+        try {
+            this.texture = TextureLoader.getTexture("JPG", ResourceLoader.getResourceAsStream("art/" + textureName + ".jpg"));
+            this.texture.bind();
+            GL11.glTranslatef(x, y, 0);
+            GL11.glBegin(GL11.GL_QUADS);
+
+            // set up coordinates of the tile square
+            GL11.glVertex2f(0, 0);
+            GL11.glTexCoord2f(0,0);
+
+            GL11.glVertex2f(hw, 0);
+            GL11.glTexCoord2f(1,0);
+
+            GL11.glVertex2f(hw, hw);
+            GL11.glTexCoord2f(1,1);
+
+            GL11.glVertex2f(0, hw);
+            GL11.glTexCoord2f(0,1);
+            GL11.glEnd();
+            GL11.glLoadIdentity();
+
+        } catch (IOException error) {
+            error.printStackTrace();
+        }
+    }
+}
