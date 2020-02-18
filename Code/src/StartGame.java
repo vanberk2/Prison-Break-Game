@@ -37,16 +37,6 @@ public class StartGame {
         GL11.glMatrixMode(GL11.GL_MODELVIEW);
     }
 
-    public void resetGL() {
-        GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
-        GL11.glLoadIdentity();
-    }
-
-    public void update() {
-        resetGL();
-        Display.update();
-    }
-
     public void close() {
         Display.destroy();
         System.exit(0);

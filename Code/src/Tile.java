@@ -40,7 +40,6 @@ public class Tile {
             GL11.glTexCoord2f(0,1);
             GL11.glEnd();
             GL11.glLoadIdentity();
-
         } catch (IOException error) {
             error.printStackTrace();
         }
