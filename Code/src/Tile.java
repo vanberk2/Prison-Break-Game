@@ -21,7 +21,7 @@ public class Tile {
 
     public void tDraw () {
         try {
-            this.texture = TextureLoader.getTexture("JPG", ResourceLoader.getResourceAsStream("art/" + textureName + ".jpg"));
+            this.texture = TextureLoader.getTexture("PNG", ResourceLoader.getResourceAsStream("art/" + textureName + ".png"));
             this.texture.bind();
             GL11.glTranslatef(x, y, 0);
             GL11.glBegin(GL11.GL_QUADS);
@@ -43,5 +43,21 @@ public class Tile {
         } catch (IOException error) {
             error.printStackTrace();
         }
+    }
+
+    public float getX() {
+        return this.x;
+    }
+
+    public void setX(float x) {this.x = x;}
+
+    public float getY() {
+        return this.y;
+    }
+
+    public void setY(float y) {this.y = y;}
+
+    public void setTexture(String textureName) {
+        this.textureName = textureName;
     }
 }
