@@ -1,4 +1,6 @@
+import helper.AABB;
 import org.lwjgl.opengl.GL11;
+import org.lwjgl.util.vector.Vector2f;
 import org.newdawn.slick.opengl.Texture;
 import org.newdawn.slick.opengl.TextureLoader;
 import org.newdawn.slick.util.ResourceLoader;
@@ -10,10 +12,12 @@ public class Tile {
     private String textureName;  //specifies material of block object
     private Texture texture;    // texture of the tile
     private float x, y, hw;   //position and height/width of tile (height/width will always be the same for now)
+    private AABB hitbox;
 
     public Tile (float x, float y, float hw, String textureName) {
         this.x = x;
         this.y = y;
+        this.hitbox = new AABB(new Vector2f(this.x,this.y), new Vector2f(this.x+32, this.y+32));
         this.hw = hw;
         this.textureName = textureName;
         this.texture = null;
@@ -60,4 +64,6 @@ public class Tile {
     public void setTexture(String textureName) {
         this.textureName = textureName;
     }
+
+    public String getTextureName() { return this.textureName; }
 }
