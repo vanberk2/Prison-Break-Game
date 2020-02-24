@@ -1,0 +1,13 @@
+
+public class Player extends Sprite {
+ private static final double DEFAULT_HEALTH = 200;
+ 
+ public Player(String name, double health) {
+  super(name, health);
+ }
+ 
+ public Player(String name) {
+  this(name,DEFAULT_HEALTH);
+ }
+
+}
