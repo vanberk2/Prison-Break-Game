@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class Sprite {
+ private String name;
+ private double health;
+ 
+ public Sprite(String name, double health) {
+  super();
+  this.name = name;
+  this.health = health;
+ }
+ 
+ public String getName() {
+  return name;
+ }
+ public void setName(String name) {
+  this.name = name;
+ }
+ public double getHealth() {
+  return health;
+ }
+ public void setHealth(double d) {
+  this.health = d;
+ }
+ 
+ public boolean isKilled() {
+  return health <= 0;
+ }
+ 
+ public void printStats() {
+  
+  String comment;
+  
+  if(health >= 200) {
+   comment = "Full health";
+  }else if(health < 200 && health >= 100) {
+   comment = "Slightly tired";
+  }else if(health< 100 && health > 0 ) {
+   comment = "Needs recovering now!";
+  }else {
+   comment = "Dead";
+  }
+  
+  if(health >0)
+   System.out.println(">> " + name.toUpperCase() + " || HP " + health + " [ " + comment + " ]");
+  else
+   System.out.println(">> " + name.toUpperCase() + " [ " + comment + " ]");
+ }
+ 
+}

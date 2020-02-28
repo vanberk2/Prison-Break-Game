@@ -1,0 +1,11 @@
+import java.lang.*;
+import java.util.*;
+import java.io.*;
+
+public interface DecisionMaker
+{
+  public static Move getMove(Character c){
+   return null;
+  }
+   
+}
