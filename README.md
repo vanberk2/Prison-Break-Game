@@ -1,2 +1,6 @@
-# Group-7
-Repository for CS 442 Group 7
+# CS 442 Software Engineering II Projectg
+This is a Prison Break game that is currently being worked on by myself and a few others.
+
+# Installation Instructions
+
+TBD.
