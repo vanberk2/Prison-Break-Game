@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="32" height="32" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="5">
+ <tileset firstgid="1" source="tilemap2.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="32" height="32">
+  <properties>
+   <property name="collidable" value="no"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAECmNnYGBgH8VDIgyagPFEDB7I+AS5b6DsH7Wb/mE/GuajYU6v/D6QaY1efhy1h/75CVuYi6PVY+h8bHqGkxi6f9H59PAryE4Ypod9o3YMjrw3Gg+j8TCaBuiTBgBvaUyLABAAAA==
+  </data>
+ </layer>
+ <layer id="5" name="wall" width="32" height="32">
+  <properties>
+   <property name="collidable" value="yes"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAECu3QsQkAAAwCQcvsP3FcIqQ54WvhEiNAgAABAgQIECBAgAABAgSuBaYHny1vqLJAABAAAA==
+  </data>
+ </layer>
+</map>

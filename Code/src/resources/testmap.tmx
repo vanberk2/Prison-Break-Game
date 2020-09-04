@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="32" height="32" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="5">
+ <tileset firstgid="1" source="tilemap2.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="32" height="32">
+  <properties>
+   <property name="collidable" value="no"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAECmNnYGBgH8WjYTCaBkbTwGgaGE0Do2lgNA2MpgEGcbQwQOcP9zYTun/R+fTwP8hOGKaHfaN2jPYFRtPAaBoYSWkAAAUA4WgAEAAA
+  </data>
+ </layer>
+ <layer id="4" name="object" width="32" height="32">
+  <properties>
+   <property name="collidable" value="yes"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAECu1UQQ6AIAzj6P9frBwam2aZxQzlAAkZW0sLk3i01o6f52Ufjn4uDJyRc6wRlYN6FtlDeYypNmPYpxzUsxjpgM+YajPG/KgOPIoZn7G+1lz1lKN4lLOm4oxB24mqk+XsoTzGHF9wVCfLRz2gxftQexOrdN549z3b3///Rj3u/ftqzvKPdL+qrfT+Rr5jVX/4/qv4V93N0Ynu7+yr4oz64xtt/5oO7P7ffXTelsO5FZ9XUf/hkcVnZY+xkr934loW379W2VPb/l6fZrFO6pEZkQAQAAA=
+  </data>
+ </layer>
+</map>
